@@ -8,33 +8,51 @@ configure_osx: true
 homebrew_upgrade_all_packages: true
 
 homebrew_installed_packages:
-  - bash-completion
   - git
   - github/gh/gh
-  - go
   - gpg
   - httpie
   - sqlite
-  - mcrypt
   - node
   - nvm
   - php
   - ssh-copy-id
   - openssl
   - wget
-  - zsh-history-substring-search
   - fish
-  - dotnet
   - git
+  - coreutils
   - pyenv
-  - speedtest-cli
-  - rust
-  - r
-  - ruby
+  - tmux
+  - bash
+  - zsh
+  # - go
+  # - ansible # Installed via Pip.
+  # - rust
+  # - r
+  # - ruby
+  # - bash-completion
+  # - dotnet
+  # - speedtest-cli
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
 
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - 1password
+  - visual-studio-code
+  - docker
+  - dropbox
+  - firefox
+  - google-chrome
+  - handbrake
+  - slack
+  - discord
+  - zoom
+  - zotero
+  - kitty
+  - thingsmacsandboxhelper
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks: []
